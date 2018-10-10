@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theedge.nelsongkatale.login_form.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_butterfly_309109"
+            />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/email"
+                android:textColorHint="@color/colorDarkOrange"
+                android:backgroundTint="@color/colorDarkOrange">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorDarkOrange"
+                    android:textColorHint="@color/colorDarkOrange"
+                    android:inputType="text"
+                    app:errorEnabled="true"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:backgroundTint="@color/colorDarkOrange"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/passwd"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="true"
+                android:maxLines="1"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorDarkOrange"
+                android:textColor="@color/colorDarkOrange"
+                android:textColorHint="@color/colorDarkOrange"
+                android:backgroundTint="@color/colorDarkOrange">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorDarkOrange"
+                    android:backgroundTint="@color/colorDarkOrange"
+                    android:textColorHint="@color/colorDarkOrange"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:lines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/loginbtn"
+                android:text="Login"
+                android:onClick="loginBtn"
+                android:clickable="true"
+                android:background="@drawable/roundedges"
+                android:soundEffectsEnabled="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="115dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Have no account ?"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorDarkOrange"
+                />
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:id="@+id/signUp"
+                android:text="Sign up Here"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/colorDarkOrange"
+                android:clickable="true"
+                android:soundEffectsEnabled="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

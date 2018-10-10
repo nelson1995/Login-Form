@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theedge.nelsongkatale.login_form.RegistrationActivity"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_navigation"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorDarkOrange"
+                android:textColorHint="@color/colorDarkOrange"
+                app:errorEnabled="true"
+                android:id="@+id/fname">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorDarkOrange"
+                    android:textColor="@color/colorDarkOrange"
+                    android:hint="first name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:lines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="@color/colorDarkOrange"
+                android:maxLines="1"
+                app:errorEnabled="true"
+                android:id="@+id/lname">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="last name"
+                android:backgroundTint="@color/colorDarkOrange"
+                android:textColor="@color/colorDarkOrange"
+                android:inputType="text"
+                android:maxLines="1"
+                android:lines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="@color/colorDarkOrange"
+                android:maxLines="1"
+                android:id="@+id/email">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="email"
+                android:backgroundTint="@color/colorDarkOrange"
+                android:textColor="@color/colorDarkOrange"
+                android:inputType="text"
+                android:maxLines="1"
+                android:lines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorDarkOrange"
+                android:textColorHint="@color/colorDarkOrange"
+                android:maxLines="1"
+                android:id="@+id/passwd">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:backgroundTint="@color/colorDarkOrange"
+                    android:textColor="@color/colorDarkOrange"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:lines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/regbtn"
+                android:text="Register"
+                android:clickable="true"
+                android:background="@drawable/roundedges"
+                android:soundEffectsEnabled="true" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="130dp">
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:id="@+id/signIn"
+                android:text="Back to login page"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorDarkOrange"
+                android:clickable="true"
+                android:soundEffectsEnabled="true" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

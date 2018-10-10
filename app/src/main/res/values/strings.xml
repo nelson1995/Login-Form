@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login_Form</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="error_message">Field cannot be empty</string>
+
+    <string name="error_message2">Invalid email address</string>
+    <string name="error_message3">password too weak</string>
+    <string name="login_message">Logging ink</string>
+    <string name="error_message4">User not registered</string>
+</resources>
